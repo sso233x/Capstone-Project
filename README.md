@@ -1,22 +1,23 @@
 ### To Start Project
 
-### Navigating to directories
 **You will need two terminal windows open, 
 one for the frontend and one for the backend.**
 
-1. **Start the Back-End first**
+1. ### Navigate to the Back-End first
    cd backend
    
-   **To Start use**
-   flask run/app.py
+   ### To Start
+   flask run/python app.py (could be python3 app.py)
 
-3. **Start the Front-End**
+2. ### Navigate to the Front-End
    cd frontend
 
-   **To Start use**
+   ### To Start
    npm start
 
-### The app should start in your browser
+
+### The app will then start in your browser.
+
 
 **I have made a couple users along with one admin. 
 Feel free to register your own membership or here 
