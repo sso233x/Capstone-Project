@@ -3,6 +3,8 @@
 **You will need two terminal windows open, 
 one for the frontend and one for the backend.**
 
+**The backend will use localhost:5000 and the frontend will use localhost:3000**
+
 1. ### Navigate to the Back-End first
    cd backend
    
