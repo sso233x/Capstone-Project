@@ -17,7 +17,8 @@ one for the frontend and one for the backend.**
    ### To Start
    npm start
 
-
+   (make sure you are using Node version 20 before you start)
+   
 ### The app will then start in your browser.
 
 
