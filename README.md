@@ -1,5 +1,8 @@
+### Capstone Project
 
-
+**This is an app that allows a User to create/cancel a membership and enroll/uneneroll from classes.
+It also has an Admin that can create/edit/delete classes, allowoing them to chnage the name, time,
+and limit of attendees.**
 
 ### To Start Project
 
