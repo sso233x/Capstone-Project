@@ -11,20 +11,23 @@ one for the frontend and one for the backend.**
 
 **The backend will use localhost:5000 and the frontend will use localhost:3000**
 
-1. ### Navigate to the Back-End first
+1. ### Navigate to the Back-End first:
    cd Capstone/backend
 
-   ### Seed Database
+   ### Seed Database:
    python3 seed.py
    
-   ### To Start
+   ### To Start:
    flask run/python3 app.py (could be python app.py)
 
-1. ### Navigate to the Front-End
-   cd frontend
+1. ### Navigate to the Front-End:
+   cd Capstone/frontend
 
-   ### To Start
-   (make sure you are using Node version 20 before you start, nvm use 20)
+   ### To Start:
+   (make sure you are using Node version 20 before you start)
+   nvm use 20
+
+   **Then:**
    npm start
    
 ### The app will then start in your browser.
