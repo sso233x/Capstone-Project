@@ -1,3 +1,6 @@
+
+
+
 ### To Start Project
 
 **You will need two terminal windows open, 
@@ -6,38 +9,33 @@ one for the frontend and one for the backend.**
 **The backend will use localhost:5000 and the frontend will use localhost:3000**
 
 1. ### Navigate to the Back-End first
-   cd backend
+   cd Capstone/backend
+
+   ### Seed Database
+   python3 seed.py
    
    ### To Start
-   flask run/python app.py (could be python3 app.py)
+   flask run/python3 app.py (could be python app.py)
 
-2. ### Navigate to the Front-End
+1. ### Navigate to the Front-End
    cd frontend
 
    ### To Start
+   (make sure you are using Node version 20 before you start, nvm use 20)
    npm start
-
-   (make sure you are using Node version 20 before you start)
    
 ### The app will then start in your browser.
 
-
-**I have made a couple users along with one admin. 
-Feel free to register your own membership or here 
-are their emails and passwords for logging in:**
+**The seed.py will add an admin and two members, along with three classes**
 
 ### Admin-
 email: admin@example.com
-password: adminpassword
+password: admin123
 
-### User1-
-email: dog@email.com
-password: dogdog
+### Member1-
+email: member1@example.com
+password: member123
 
-### User2-
-email: cat@email.com
-passowrd: catcat
-
-### User3-
-email: fish@gmail.com
-password: fishfish
+### Member2-
+email: member2@example.com
+passowrd: member123
