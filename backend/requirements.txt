@@ -1,3 +1,5 @@
+Cython>=0.29
+PyYAML>=6.0.1
 asttokens==2.4.1
 bcrypt==4.2.1
 beautifulsoup4==4.12.3
