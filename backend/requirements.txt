@@ -68,7 +68,6 @@ six==1.16.0
 soupsieve==2.6
 SQLAlchemy==2.0.36
 stack-data==0.6.3
-systemd-python==234
 tomli==2.2.1
 traitlets==5.14.3
 ttystatus==0.38
