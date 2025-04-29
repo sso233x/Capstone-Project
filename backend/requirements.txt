@@ -60,7 +60,6 @@ PyGObject==3.42.1
 PyJWT==2.3.0
 pyparsing==2.4.7
 pytest==8.3.4
-python-apt==2.4.0+ubuntu2
 PyYAML==5.4.1
 requests==2.32.3
 SecretStorage==3.3.1
