@@ -23,7 +23,7 @@ function App() {
 
         if (token) {
             // Decode token or fetch user role from API
-            fetch(`{API_URL}/me`, { 
+            fetch(`${API_URL}/me`, { 
                 headers: { Authorization: `Bearer ${token}` }
             })
             .then(res => res.json())
