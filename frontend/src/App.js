@@ -10,6 +10,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import Profile from "./pages/Profile";
 import './App.css';
 
+const API_URL = "https://capstone-backend-d31e.onrender.com";
 
 function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(null);
@@ -22,7 +23,7 @@ function App() {
 
         if (token) {
             // Decode token or fetch user role from API
-            fetch("http://127.0.0.1:5000/me", { 
+            fetch(`{API_URL}/me`, { 
                 headers: { Authorization: `Bearer ${token}` }
             })
             .then(res => res.json())
