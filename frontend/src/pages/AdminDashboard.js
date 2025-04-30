@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import './AdminDashboard.css';
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://capstone-backend-d31e.onrender.com";
 
 function AdminDashboard() {
   const [classes, setClasses] = useState([]);
