@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Register.css";
 
+const API_URL = "https://capstone-backend-d31e.onrender.com";
+
 function Register() {
     const [formData, setFormData] = useState({ name: "", email: "", password: "" });
     const [error, setError] = useState("");
@@ -16,7 +18,7 @@ function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:5000/register", formData);
+            const res = await axios.post(`{API_URL}/register`, formData);
             console.log("Response:", res.data);
             navigate("/dashboard");
         } catch (error) {
