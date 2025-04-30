@@ -18,7 +18,7 @@ function Login({ setIsAuthenticated }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`{API_URL}/login`, formData);
+            const res = await axios.post(`${API_URL}/login`, formData);
             localStorage.setItem("token", res.data.token);
             localStorage.setItem("role", res.data.role);
             setIsAuthenticated(true);
