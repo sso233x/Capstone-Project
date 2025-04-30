@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Classes.css";
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://capstone-backend-d31e.onrender.com";
 
 function Classes() {
     const [classes, setClasses] = useState([]);
