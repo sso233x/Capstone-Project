@@ -47,6 +47,10 @@ class Attendance(db.Model):
     timestamp = db.Column(db.DateTime, default=datetime.datetime.utcnow)
 
 # Routes
+@app.route("/")
+def home():
+    return "Backend is running!"  # Or render a template if you want
+
 @app.route('/register', methods=['POST'])
 def register():
     data = request.json
