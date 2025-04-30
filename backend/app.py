@@ -21,10 +21,16 @@ CORS(app, supports_credentials=True, origins=[
 
 @app.after_request
 def add_cors_headers(response):
-    response.headers["Access-Control-Allow-Origin"] = "http://localhost:3000"
+    origin = request.headers.get('Origin')
+    allowed_origins = [
+        "http://localhost:3000",
+        "https://capstone-project-i1x7.onrender.com"
+    ]
+    if origin in allowed_origins:
+        response.headers["Access-Control-Allow-Origin"] = origin
+        response.headers["Access-Control-Allow-Credentials"] = "true"
     response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
-    response.headers["Access-Control-Allow-Credentials"] = "true"
     return response
 
 # Models
