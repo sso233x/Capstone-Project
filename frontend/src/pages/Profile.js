@@ -12,7 +12,7 @@ function Profile() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`{API_URL}/profile`, {
+        axios.get(`${API_URL}/profile`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`
             }
@@ -34,7 +34,7 @@ function Profile() {
         if (!confirmCancel) return;
 
         try {
-            await axios.delete(`{API_URL}/cancel-membership`, {
+            await axios.delete(`${API_URL}/cancel-membership`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
                     'Content-Type': 'application/json',
