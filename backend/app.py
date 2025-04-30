@@ -14,7 +14,10 @@ app.config['JWT_SECRET_KEY'] = 'supersecretkey'  # Change this in production
 db = SQLAlchemy(app)
 jwt = JWTManager(app)
 bcrypt = Bcrypt(app)
-CORS(app)
+CORS(app, origins=[
+    "http://localhost:3000",
+    "https://capstone-project-i1x7.onrender.com"
+])
 
 @app.after_request
 def add_cors_headers(response):
