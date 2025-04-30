@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://capstone-backend-d31e.onrender.com";
 
 export const login = async (email, password) => {
     const res = await axios.post(`${API_URL}/login`, { email, password });
