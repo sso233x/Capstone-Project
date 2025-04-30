@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './Profile.css';
 
+const API_URL = "https://capstone-backend-d31e.onrender.com";
+
 function Profile() {
     const [profileData, setProfileData] = useState(null);
     const [loading, setLoading] = useState(true); // Manage loading state
@@ -10,7 +12,7 @@ function Profile() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://localhost:5000/profile', {
+        axios.get(`{API_URL}/profile`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`
             }
@@ -32,7 +34,7 @@ function Profile() {
         if (!confirmCancel) return;
 
         try {
-            await axios.delete('http://localhost:5000/cancel-membership', {
+            await axios.delete(`{API_URL}/cancel-membership`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
                     'Content-Type': 'application/json',
