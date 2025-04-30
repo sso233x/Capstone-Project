@@ -1,3 +1,4 @@
+gunicorn
 Cython>=0.29
 PyYAML>=6.0.1
 asttokens==2.4.1
