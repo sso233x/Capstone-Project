@@ -335,8 +335,17 @@ def create_default_admin():
          db.session.add(admin_user)
          db.session.commit()
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
+#    with app.app_context():
+#        db.create_all()  # This ensures the database tables are created
+#        create_default_admin()  # Ensure the admin is created if it doesn't exist
+#    app.run(debug=True)
+if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    
     with app.app_context():
-        db.create_all()  # This ensures the database tables are created
-        create_default_admin()  # Ensure the admin is created if it doesn't exist
-    app.run(debug=True)
+        db.create_all()
+        create_default_admin()
+    
+    app.run(host="0.0.0.0", port=port)
